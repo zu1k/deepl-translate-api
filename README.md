@@ -16,7 +16,7 @@
 
 ## 使用说明
 
-### Docker方式
+### Docker方式（唯一推荐方式）
 
 ```sh
 docker run -itd -p 8080:80 zu1k/deepl
