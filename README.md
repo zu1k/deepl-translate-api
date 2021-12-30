@@ -22,6 +22,24 @@
 docker run -itd -p 8080:80 zu1k/deepl
 ```
 
+### deepl-standalone
+
+这个版本与直接使用zu1k/deepl镜像类似
+
+```
+docker load < deepl-standalone.tar
+```
+
+### deepl-lambda
+
+这个版本供aws lambda使用，使用时先导入本地docker中
+
+```
+docker load < deepl-lambda.tar
+```
+
+然后根据aws给出的提示推到Amazon ECR中，最后创建lambda函数和api网关
+
 ## API说明
 
 ### Request
